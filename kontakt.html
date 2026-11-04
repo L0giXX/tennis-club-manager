@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tennis Club Manager - Kontakt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link"> Zum Hauptinhalt springen </a>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="assets/bildmarke.svg" alt="Logo des Tennis Club Managers" />
+          <p><strong>Tennis Club Manager</strong></p>
+        </div>
+
+        <nav aria-label="Hauptnavigation">
+          <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="lizenz.html">Lizenz</a></li>
+            <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="container section">
+        <h1>Kontakt</h1>
+
+        <p>
+          Haben Sie Fragen zum Tennis Club Manager? Nutzen Sie unser
+          Kontaktformular.
+        </p>
+
+        <h2>Kontaktformular</h2>
+
+        <form
+          id="kontaktformular"
+          action="#"
+          method="get"
+          onsubmit="
+            alert(
+              'Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden.',
+            );
+            return false;
+          "
+        >
+          <div class="form-group">
+            <label for="name">Name (erforderlich)</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-Mail-Adresse (erforderlich)</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="nachricht">Nachricht (erforderlich)</label>
+            <textarea
+              id="nachricht"
+              name="nachricht"
+              rows="6"
+              maxlength="2000"
+              required
+            ></textarea>
+          </div>
+
+          <p>
+            Informationen zum Datenschutz finden Sie in unserer
+            <a href="datenschutz.html"> Datenschutzerklärung </a>.
+          </p>
+
+          <button type="submit" class="button">Anfrage senden</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <nav aria-label="Rechtliche Informationen">
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
+            <li><a href="mediennachweise.html">Mediennachweise</a></li>
+          </ul>
+        </nav>
+
+        <p>&copy; 2026 Tennis Club Manager.</p>
+      </div>
+    </footer>
+  </body>
+</html>
